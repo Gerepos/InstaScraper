@@ -1,5 +1,8 @@
-BeautifulSoup==3.2.2
-beautifulsoup4==4.8.2
-requests==2.22.0
-soupsieve==1.9.5
+# Requirements for InstaScraper
+beautifulsoup4>=4.8.2
+requests>=2.22.0
+soupsieve>=1.9.5
 cfscrape==2.0.8
+# Pin urllib3 to 1.x to keep compatibility with cfscrape
+# urllib3 2.x removed DEFAULT_CIPHERS which cfscrape imports
+urllib3<2
